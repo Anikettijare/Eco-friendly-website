@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Foldit:wght@300&family=Kalam&family=Montserrat:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Eco-Friendly website</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header section and Navigation menu -->
+        <header>
+            <!-- Navbar -->
+            <nav>
+                <div class="navbar">
+                    <div class="logo_section">
+                        <img src="images/logo.png" alt="logo of the website">
+                    </div>
+                    <ul id="list" onclick="closeMenu()">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#typo">Typography</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-shopping-bag"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-th"></i>
+                            </a>
+                        </li>
+                        <li class="close_btn">
+                            <img src="images/close.jpeg" width="40px">
+                        </li>
+                    </ul>
+                    <div class="mobile_menu" id="btn" onclick="openMenu()">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- corousal section -->
+        <section id="home">
+            <div class="slider_container">
+                <!-- slider 1 -->
+                <div class="slide_wrapper">
+                    <div class="slider" style="background-image: url('images/slider-3-1920x729.jpg');background-size: cover; 
+                     background-repeat: no-repeat; background-position: center;">
+                        <div class="slider_caption">
+                            <h1>Eco-Friendly</h1>
+                            <p>
+                                As the leading organic farm, we maintain an eco-friendly policy of growing and
+                                selling healthy food without any additives.
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <!-- slider 2 -->
+                    <div class="slider" style="background-image: url('images/slider-1-1920x729.jpg');background-size: cover; 
+                     background-repeat: no-repeat; background-position: center; color: #fff;">
+                        <div class="slider_caption">
+                            <h1>Organic Food</h1>
+                            <p>
+                                Herber provides local citizens and guests of our
+                                town with quality organic fruits, vegetables, and other products.
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <!-- slider 3 -->
+                    <div class="slider" style="background-image: url('images/slider-2-1920x729.jpg');background-size: cover; 
+                     background-repeat: no-repeat; background-position: center; color: #fff;">
+                        <div class="slider_caption">
+                            <h1>Quality Control</h1>
+                            <p>
+                                We control the process of farming at Herber to deliver
+                                the best organic products to our customers throughout the state.
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Button -->
+            <div class="slider_btn ">
+                <i class="fa fa-arrow-left prev" onclick="plusSlides(-1)"></i>
+            </div>
+            <div class="slider_btn ">
+                <i class="fa fa-arrow-right next" onclick="plusSlides(1)"></i>
+            </div>
+        </section>
+        <!-- equipment & natural info -->
+        <section>
+            <div class="info_section">
+                <div class="special_info">
+                    <i class="fa fa-leaf"></i>
+                    <span>Natural & Organic</span>
+                </div>
+                <div class="special_info">
+                    <i class="fa fa-gavel"></i>
+                    <span>Best Equipment</span>
+                </div>
+                <div class="special_info">
+                    <i class="fa fa-sun-o"></i>
+                    <span>Dadicated Team</span>
+                </div>
+            </div>
+        </section>
+        <!-- Organic vegetables -->
+        <section id="about">
+            <div class="org_vegies">
+                <div class="veges_img">
+                    <img src="images/organic vegies.jpg">
+                    <div class="product_content">
+                        <div class="product_banner">
+                            <h3>Organic</h3>
+                            <h2>vegetables</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_img">
+                    <div class="fruits_img">
+                        <div class="images_container">
+                            <img src="images/avocados.png" alt="">
+                            <em>Add to cart</em>
+                            <div class="img_body">
+                                <h2>Avocados</h2>
+                                <p><span>$59.00</span>$28.00</p>
+                            </div>
+                        </div>
+                        <div class="images_container">
+                            <img src="images/corn.png" alt="">
+                            <em>Add to cart</em>
+                            <div class="img_body">
+                                <h2>Corn</h2>
+                                <p>$27.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fruits_img">
+                        <div class="images_container">
+                            <img src="images/Artichokes.png" alt="">
+                            <em>Add to cart</em>
+                            <div class="img_body">
+                                <h2>Artichokes</h2>
+                                <p>$23.00</p>
+                            </div>
+                        </div>
+                        <div class="images_container">
+                            <img src="images/Broccoli.png" alt="">
+                            <em>Add to cart</em>
+                            <div class="img_body">
+                                <h2>Broccoli</h2>
+                                <p>$25.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Approach Section -->
+        <section>
+            <div class="approach_section">
+                <div class="app_body">
+                    <h1>Our Approach</h1>
+                    <p>
+                        Our farm strictly combines the traditions of organic farming with the latest innovations to make
+                        our products healthy and safe for the clients.
+                    </p>
+                    <a href="#"><i class="fa fa-caret-right"></i>
+                        View Presantation</a>
+                </div>
+            </div>
+        </section>
+        <!-- Our Team section -->
+        <section id="typo">
+            <div class="team_section">
+                <div class="team_head">
+                    <h1>Our Team</h1>
+                    <div class="team_member">
+                        <div class="member">
+                            <img src="images/team-1-370x406.jpg" alt="">
+                            <div class="team-info">
+                                <h2>Ryan Wilson</h2>
+                                <p>Founder</p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <img src="images/team-2-370x406.jpg" alt="">
+                            <div class="team-info">
+                                <h2>Jill Peterson</h2>
+                                <p>Garden Manager</p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <img src="images/team-3-370x406.jpg" alt="">
+                            <div class="team-info">
+                                <h2>Sam Robinson</h2>
+                                <p>Farmyard Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Achivement section -->
+        <section>
+            <div class="achive_section">
+                <div class="achivements">
+                    <div class="awards">
+                        <h1>12 <i class="fa fa-trophy"></i></h1>
+                        <p>Awards</p>
+                    </div>
+                    <div class="product">
+                        <h1>2K <i class="fa fa-home"></i></h1>
+                        <p>Products</p>
+                    </div>
+                    <div class="client">
+                        <h1>679 <i class="fa fa-sun-o"></i></h1>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="farmer">
+                        <h1>13 <i class="fa fa-user-plus"></i></h1>
+                        <p>Farmers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery section -->
+        <section class="gallery">
+            <div class="gallery_section">
+                <div class="our_gallery">
+                    <h1>Our Gallery</h1>
+                    <div class="img_gallery">
+                        <div class="images">
+                            <img src="images/grid-gallery-1-370x303.jpg" alt="">
+                            <i class="fa fa-search fa-2x">
+                                <p>Watermelon</p>
+                            </i>
+                        </div>
+                        <div class="images">
+                            <img src="images/grid-gallery-2-370x303.jpg" alt="">
+                            <i class="fa fa-search fa-2x">
+                                <p>Grapes</p>
+                            </i>
+                        </div>
+                        <div class="images">
+                            <img src="images/grid-gallery-3-370x303.jpg" alt="">
+                            <i class="fa fa-search fa-2x">
+                                <p>Mandarin Oranges</p>
+                            </i>
+                        </div>
+                        <div class="images">
+                            <img src="images/grid-gallery-4-370x303.jpg" alt="">
+                            <i class="fa fa-search fa-2x">
+                                <p>Lemons</p>
+                            </i>
+                        </div>
+                        <div class="images">
+                            <img src="images/grid-gallery-5-370x303.jpg" alt="">
+                            <i class="fa fa-search fa-2x">
+                                <p>Organic Food</p>
+                            </i>
+                        </div>
+                        <div class="images">
+                            <img src="images/grid-gallery-6-370x303.jpg" alt="">
+                            <i class="fa fa-search fa-2x">
+                                <p>Salad</p>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Template information -->
+        <article>
+            <div class="temp_info">
+                <img src="images/foreground-03-1600x310.png" width="100%">
+            </div>
+        </article>
+        <!-- Footer section -->
+        <footer id="contact">
+            <div class="footer_section">
+                <div class="first_item">
+                    <div class="logo_section">
+                        <img src="images/logo-inverse-196x42.png" alt="logo of the website">
+                        <p>
+                            Herber is an organic farm located in California. We offer healthy foods and products to our
+                            clients.
+                        </p>
+                    </div>
+                    <ul>
+                        <li><i class="fa fa-phone"></i> +1 323-913-4688</li>
+                        <li><i class="fa fa-clock-o"></i> Mon-Sat: 07:00AM - 05:00PM</li>
+                        <li><i class="fa fa-location-arrow"></i> 4730 Crystal Springs Dr, Los Angeles, CA 90027</li>
+                    </ul>
+                </div>
+                <div class="news_letter">
+                    <h2>Newsletter</h2>
+                    <p>Join our email newsletter for news and tips</p>
+                    <form action="post">
+                        <div class="in_field">
+                            <input type="email" placeholder="Enter your E-mail">
+                        </div>
+                        <button>Subscribe</button>
+                    </form>
+                    <p>follow us on
+                        <span>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-google"></i>
+                            <i class="fa fa-instagram"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="photo_gall">
+                    <h2>Gallery</h2>
+                    <div class="photos">
+                        <div>
+                            <img src="images/gallery-image-1-129x120.jpg">
+                            <img src="images/gallery-image-2-129x120.jpg">
+                        </div>
+                        <div>
+                            <img src="images/gallery-image-3-129x120.jpg">
+                            <img src="images/gallery-image-4-129x120.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll_btn">
+                <a href="#" class="scroll_top"><i class="fa fa-arrow-up"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slider");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+
+        }
+
+
+        const scroll = document.querySelector(".scroll_top");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 150) {
+                scroll.classList.add("active");
+            } else {
+                scroll.classList.remove("active");
+            }
+        });
+
+        let menu_btn = document.getElementById('list');
+        function openMenu() {
+            menu_btn.style.top = "0px";
+        }
+        function closeMenu() {
+            menu_btn.style.top = "-700px";
+        }
+
+
+    </script>
+</body>
+
+</html>
